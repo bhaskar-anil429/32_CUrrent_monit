@@ -52,6 +52,7 @@ int read_current(int channel_number)
   {
     for ( byte i = channel_number; i<= channel_number; i++)
     { 
+      i = channel_number - 12;
     Wire.beginTransmission(address+1); // Start communication
     Wire.write(146); // Command header 
     Wire.write(106); // Command header 
@@ -87,6 +88,7 @@ int read_current(int channel_number)
   {
     for ( byte i = channel_number; i<= channel_number; i++)
     { 
+      i = channel_number - 24;
     Wire.beginTransmission(address+2); // Start communication
     Wire.write(146); // Command header 
     Wire.write(106); // Command header 
