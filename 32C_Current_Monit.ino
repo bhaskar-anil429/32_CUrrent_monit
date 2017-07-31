@@ -27,7 +27,7 @@ int read_current(int channel_number)
     Wire.write(0); 
     Wire.write((146 + 106 + 1 + i + i + 0 + 0) & 255); // CheckSum
     Wire.endTransmission(); // Complete Transmission
-    Wire.requestFrom(address, 5); 
+    Wire.requestFrom(address, 3); 
     unsigned long MSB1 = Wire.read();
      MSB1= MSB1*65536;
     unsigned long MSB = Wire.read();
@@ -64,7 +64,7 @@ int read_current(int channel_number)
     Wire.write(0); 
     Wire.write((146 + 106 + 1 + i + i + 0 + 0) & 255); // CheckSum
     Wire.endTransmission(); // Complete Transmission
-    Wire.requestFrom(43, 5); 
+    Wire.requestFrom(43, 3); 
     unsigned long MSB1 = Wire.read();
      MSB1= MSB1*65536;
     unsigned long MSB = Wire.read();
@@ -101,7 +101,7 @@ int read_current(int channel_number)
     Wire.write(0); 
     Wire.write((146 + 106 + 1 + i + i + 0 + 0) & 255); // CheckSum
     Wire.endTransmission(); // Complete Transmission
-    Wire.requestFrom(44, 5); 
+    Wire.requestFrom(44, 3); 
     unsigned long MSB1 = Wire.read();
      MSB1= MSB1*65536;
     unsigned long MSB = Wire.read();
