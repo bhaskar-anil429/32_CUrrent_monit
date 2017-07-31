@@ -129,6 +129,6 @@ int read_current(int channel_number)
 void loop()
 {
   ///////////////////////// enter the channel number///////////////
-  read_current(45);
+  read_current(1);
      delay(3000);
 }
