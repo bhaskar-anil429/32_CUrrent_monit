@@ -45,6 +45,7 @@ int read_current(int channel_number)
     Serial.print("\n");
 //    Serial.print("I am here at 42"); 
     Wire.endTransmission(); // Complete Transmission
+     delay(3000);
     }
 }
 
@@ -82,6 +83,7 @@ int read_current(int channel_number)
     Serial.print("\n");
     Wire.endTransmission(); // Complete Transmission
 //    Serial.print("I am here at 43"); 
+     delay(3000);
     }
   }
 //////////////////////////////////////////////////////////
@@ -121,6 +123,7 @@ int read_current(int channel_number)
    // delay(500);
     Wire.endTransmission(); // Complete Transmission
 //    Serial.print("I am here at 44"); 
+     delay(3000);
    
     }
 }
